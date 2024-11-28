@@ -1,4 +1,75 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أيقونة ثابتة</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* تنسيق الأيقونة الثابتة */
+    #comment-icon {
+      position: fixed;
+      bottom: 20px; /* تبقى في الأسفل */
+      right: 20px; /* تبقى في اليمين */
+      z-index: 1000; /* تبقى فوق جميع العناصر */
+    }
+
+    #comment-icon button {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      font-size: 24px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
+
+    #comment-icon button:hover {
+      background-color: #0056b3;
+    }
+
+    /* تنسيق محتوى الصفحة */
+    #content {
+      margin: 20px;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div id="comment-icon">
+    <!-- عند الضغط يتم فتح الرابط -->
+    <button onclick="openWebsite()">💬</button>
+  </div>
+
+  <script>
+    function openWebsite() {
+      window.open('https://devingoapp.github.io/Messge/', '_blank');
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
 <html lang="ar">
 <head>
     <link rel="icon" href="5.png" type="image/png">
